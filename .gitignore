@@ -1,0 +1,60 @@
+# ROS build and log files
+build/
+devel/
+install/
+log/
+logs/
+_build/
+
+# ROS-specific hidden folders
+.ros/
+msg_gen/
+srv_gen/
+msg/_*.py
+srv/_*.py
+
+# Dynamic reconfigure
+*.cfgc
+/cfg/cpp/
+/cfg/*.py
+
+# Catkin/Colcon custom files
+CATKIN_IGNORE
+
+# VSCode and JetBrains IDE settings
+.vscode/
+.idea/
+
+# Eclipse, QtCreator, Emacs, etc.
+.project
+.cproject
+CMakeLists.txt.user
+qtcreator-*
+*.user
+.#*
+*~
+
+# Backup/temporary files
+*.swp
+*.swo
+*.bak
+*.old
+*.launch~
+*.pyc
+__pycache__/
+
+# Compiled object/binary files
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.lo
+*.slo
+*.gch
+*.pch
+
+# Mac / Windows
+.DS_Store
+Thumbs.db

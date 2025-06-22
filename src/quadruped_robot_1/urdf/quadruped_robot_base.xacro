@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:macro name="base" params="link_name parent">
+        <link name="${link_name}">
+            <visual>
+                <geometry>
+                    <box size="0.2 0.6 0.15" />
+                </geometry>
+
+                <material name="gray">
+                    <color rgba="0.5 0.5 0.5 1" />
+                </material>
+            </visual>
+
+            <collision>
+                <geometry>
+                    <box size="0.2 0.6 0.15" />
+                </geometry>
+            </collision>
+
+            <inertial>
+                <mass value="10.0" />
+                <origin xyz="0 0 0" />
+                <inertia ixx="0.152" iyy="0.166" izz="0.052" ixy="0" ixz="0" iyz="0" />
+            </inertial>
+        </link>
+        <gazebo reference="${link_name}">
+            <selfCollide>false</selfCollide>
+            <mu1>0.4</mu1>
+            <mu2>0.2</mu2>
+        </gazebo>
+
+        <joint name="${parent}_to_${link_name}" type="fixed">
+            <parent link="${parent}" />
+            <child link="${link_name}" />
+            <origin xyz="0 0 0" />
+            </joint>
+    </xacro:macro>
+</robot>

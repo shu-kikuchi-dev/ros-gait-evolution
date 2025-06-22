@@ -1,0 +1,33 @@
+<launch>
+    <arg name="use_sim_time" 
+         default="true" />
+
+    <param name="robot_description" 
+           command="$(find xacro)/xacro $(find quadruped_robot_1)/urdf/quadruped_robot.xacro" /> <!--urdfを読み込むときはcommand-->
+
+    <rosparam file="$(find quadruped_robot_1)/config/controller.yaml" command="load" /> <!--rosparamによって、loadしたファイルがパラメータサーバに分解して並べられ、controller_managerが勝手に該当パラメータを取得するのでダイジョブ-->
+
+    <node name="spawn_urdf" 
+          pkg="gazebo_ros" 
+          type="spawn_model" 
+          args="-param robot_description -urdf -model quadruped_robot -z 0.7" />
+
+    <node name="controller_spawner"
+          pkg="controller_manager"
+          type="spawner"
+          respawn="false"
+          output="screen"
+          args="base_to_front_right_upper_leg_position_controller 
+                front_right_upper_leg_to_front_right_lower_leg_position_controller
+
+                base_to_front_left_upper_leg_position_controller 
+                front_left_upper_leg_to_front_left_lower_leg_position_controller
+
+                base_to_rear_right_upper_leg_position_controller 
+                rear_right_upper_leg_to_rear_right_lower_leg_position_controller
+
+                base_to_rear_left_upper_leg_position_controller
+                rear_left_upper_leg_to_rear_left_lower_leg_position_controller" />
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+</launch>

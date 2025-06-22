@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="quadruped_robot" xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:include filename="$(find quadruped_robot_1)/urdf/quadruped_robot_base.xacro" />
+    <xacro:include filename="$(find quadruped_robot_1)/urdf/quadruped_robot_leg.xacro" />
+
+    <link name="world" />
+    <xacro:base link_name="base_link" parent="world" />
+    <xacro:leg upper_link_name="front_right_upper_leg" lower_link_name="front_right_lower_leg" foot_link_name="front_right_foot" parent="base_link" x_offset="0.14" y_offset="0.26" />
+    <xacro:leg upper_link_name="front_left_upper_leg" lower_link_name="front_left_lower_leg" foot_link_name="front_left_foot" parent="base_link" x_offset="-0.14" y_offset="0.26" />
+    <xacro:leg upper_link_name="rear_right_upper_leg" lower_link_name="rear_right_lower_leg" foot_link_name="rear_right_foot" parent="base_link" x_offset="0.14" y_offset="-0.26" />
+    <xacro:leg upper_link_name="rear_left_upper_leg" lower_link_name="rear_left_lower_leg" foot_link_name="rear_left_foot" parent="base_link" x_offset="-0.14" y_offset="-0.26" />
+
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace></robotNamespace> <!--単一ロボットなので、名前空間衝突の心配がないから、未定義でおけ-->
+        </plugin>
+    </gazebo>
+</robot>

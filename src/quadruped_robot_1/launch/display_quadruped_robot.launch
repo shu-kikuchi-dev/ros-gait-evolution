@@ -1,0 +1,24 @@
+<!-- display_custom_urdf.launch -->
+<launch>
+  <!-- URDFファイルパスを引数で受け取る -->
+  <arg name="model" default="$(find quadruped_robot_1)/urdf/quadruped_robot.xacro"/>
+  
+  <!-- ロボットモデルの読み込み -->
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+
+  <!-- ジョイント状態の可視化用GUI(Gazeboでは不要。手動でのジョイント確認用のものだから) -->
+  <node name="joint_state_publisher_gui" 
+        pkg="joint_state_publisher_gui" 
+        type="joint_state_publisher_gui" />
+
+  <!-- TF変換のブロードキャスト(Gazegboで入らない。gazebo_ros_controlなどでモータ駆動を実装していれば、自動でブロードキャストされるから) -->
+  <node name="robot_state_publisher" 
+        pkg="robot_state_publisher" 
+        type="robot_state_publisher" />
+
+  <!-- RViz起動 -->
+  <node name="rviz" 
+        pkg="rviz" 
+        type="rviz" 
+        required="true" />
+</launch>
