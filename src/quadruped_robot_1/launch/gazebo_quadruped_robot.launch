@@ -7,6 +7,8 @@
 
     <rosparam file="$(find quadruped_robot_1)/config/controller.yaml" command="load" /> <!--rosparamによって、loadしたファイルがパラメータサーバに分解して並べられ、controller_managerが勝手に該当パラメータを取得するのでダイジョブ-->
 
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
     <node name="spawn_urdf" 
           pkg="gazebo_ros" 
           type="spawn_model" 
@@ -29,5 +31,10 @@
                 base_to_rear_left_upper_leg_position_controller
                 rear_left_upper_leg_to_rear_left_lower_leg_position_controller" />
 
-    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+    <!--simple_transmission_checker-->
+    <node name="simple_transmission_checker"
+          pkg="quadruped_robot_1"
+          type="simple_transmission_checker.py"
+          output="screen" />
+
 </launch>
