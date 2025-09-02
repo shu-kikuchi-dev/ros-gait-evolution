@@ -1,0 +1,5 @@
+quadruped_description
+/root/workspace/catkin_ws/devel/.private/quadruped_description/cmake.lock /root/workspace/catkin_ws/devel/./cmake.lock
+/root/workspace/catkin_ws/devel/.private/quadruped_description/lib/pkgconfig/quadruped_description.pc /root/workspace/catkin_ws/devel/lib/pkgconfig/quadruped_description.pc
+/root/workspace/catkin_ws/devel/.private/quadruped_description/share/quadruped_description/cmake/quadruped_descriptionConfig-version.cmake /root/workspace/catkin_ws/devel/share/quadruped_description/cmake/quadruped_descriptionConfig-version.cmake
+/root/workspace/catkin_ws/devel/.private/quadruped_description/share/quadruped_description/cmake/quadruped_descriptionConfig.cmake /root/workspace/catkin_ws/devel/share/quadruped_description/cmake/quadruped_descriptionConfig.cmake

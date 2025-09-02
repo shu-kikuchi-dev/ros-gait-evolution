@@ -1,0 +1,13 @@
+leg:
+  link_radius: 0.04
+  thigh_length: 0.24
+  calf_length: 0.24
+  foor_radius: 0.05
+
+  thigh_mass: 0.5
+  calf_mass: 0.5
+  foot_mass: 0.2
+
+  # coefficient for friction
+  mu_static: 1.0
+  mu_dynamic: 0.8

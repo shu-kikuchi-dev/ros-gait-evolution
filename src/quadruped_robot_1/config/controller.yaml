@@ -2,12 +2,12 @@
 base_to_front_right_upper_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: base_to_front_right_upper_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 front_right_upper_leg_to_front_right_lower_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: front_right_upper_leg_to_front_right_lower_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 
 
@@ -15,14 +15,12 @@ front_right_upper_leg_to_front_right_lower_leg_position_controller:
 base_to_front_left_upper_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: base_to_front_left_upper_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
-  
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 front_left_upper_leg_to_front_left_lower_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: front_left_upper_leg_to_front_left_lower_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
-
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 
 
@@ -30,14 +28,12 @@ front_left_upper_leg_to_front_left_lower_leg_position_controller:
 base_to_rear_right_upper_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: base_to_rear_right_upper_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 rear_right_upper_leg_to_rear_right_lower_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: rear_right_upper_leg_to_rear_right_lower_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
-
-
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 
 
@@ -45,13 +41,12 @@ rear_right_upper_leg_to_rear_right_lower_leg_position_controller:
 base_to_rear_left_upper_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: base_to_rear_left_upper_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 rear_left_upper_leg_to_rear_left_lower_leg_position_controller:
   type: position_controllers/JointPositionController
   joint: rear_left_upper_leg_to_rear_left_lower_leg
-  pid: {p: 20.0, i: 0.01, d: 0.2}
-
+  pid: {p: 50.0, i: 0.01, d: 0.5}
 
 
 
@@ -59,48 +54,45 @@ rear_left_upper_leg_to_rear_left_lower_leg_position_controller:
 
 
 
-
 gazebo_ros_control:
   pid_gains:
     # front right leg
     base_to_front_right_upper_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
+      d: 0.5
     front_right_upper_leg_to_front_right_lower_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
+      d: 0.5
     
     # front left leg
     base_to_front_left_upper_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
-      d: 0.1
+      d: 0.5
     front_left_upper_leg_to_front_left_lower_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
+      d: 0.5
 
     # rear right leg
     base_to_rear_right_upper_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
-      d: 0.1
+      d: 0.5
     rear_right_upper_leg_to_rear_right_lower_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
+      d: 0.5
 
     # rear left leg
     base_to_rear_left_upper_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
-      d: 0.1
+      d: 0.5
+
     rear_left_upper_leg_to_rear_left_lower_leg:
-      p: 20.0
+      p: 50.0
       i: 0.01
-      d: 0.1
+      d: 0.5
