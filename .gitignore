@@ -1,3 +1,6 @@
+# catkin-tools build meta-data
+.catkin_tools/
+
 # ROS build and log files
 build/
 devel/

@@ -1,8 +1,6 @@
 quadruped_robot_1
-/root/workspace/catkin_ws/devel/.private/quadruped_robot_1/cmake.lock /root/workspace/catkin_ws/devel/./cmake.lock
-/root/workspace/catkin_ws/devel/.private/quadruped_robot_1/lib/pkgconfig/quadruped_robot_1.pc /root/workspace/catkin_ws/devel/lib/pkgconfig/quadruped_robot_1.pc
-/root/workspace/catkin_ws/devel/.private/quadruped_robot_1/lib/quadruped_robot_1/cmake.lock /root/workspace/catkin_ws/devel/lib/quadruped_robot_1/cmake.lock
-/root/workspace/catkin_ws/devel/.private/quadruped_robot_1/lib/quadruped_robot_1/enhanced_transmission_checker.py /root/workspace/catkin_ws/devel/lib/quadruped_robot_1/enhanced_transmission_checker.py
-/root/workspace/catkin_ws/devel/.private/quadruped_robot_1/lib/quadruped_robot_1/simple_transmission_checker.py /root/workspace/catkin_ws/devel/lib/quadruped_robot_1/simple_transmission_checker.py
-/root/workspace/catkin_ws/devel/.private/quadruped_robot_1/share/quadruped_robot_1/cmake/quadruped_robot_1Config-version.cmake /root/workspace/catkin_ws/devel/share/quadruped_robot_1/cmake/quadruped_robot_1Config-version.cmake
-/root/workspace/catkin_ws/devel/.private/quadruped_robot_1/share/quadruped_robot_1/cmake/quadruped_robot_1Config.cmake /root/workspace/catkin_ws/devel/share/quadruped_robot_1/cmake/quadruped_robot_1Config.cmake
+/root/catkin_ws/devel/.private/quadruped_robot_1/lib/pkgconfig/quadruped_robot_1.pc /root/catkin_ws/devel/lib/pkgconfig/quadruped_robot_1.pc
+/root/catkin_ws/devel/.private/quadruped_robot_1/lib/quadruped_robot_1/enhanced_transmission_checker.py /root/catkin_ws/devel/lib/quadruped_robot_1/enhanced_transmission_checker.py
+/root/catkin_ws/devel/.private/quadruped_robot_1/lib/quadruped_robot_1/simple_transmission_checker.py /root/catkin_ws/devel/lib/quadruped_robot_1/simple_transmission_checker.py
+/root/catkin_ws/devel/.private/quadruped_robot_1/share/quadruped_robot_1/cmake/quadruped_robot_1Config-version.cmake /root/catkin_ws/devel/share/quadruped_robot_1/cmake/quadruped_robot_1Config-version.cmake
+/root/catkin_ws/devel/.private/quadruped_robot_1/share/quadruped_robot_1/cmake/quadruped_robot_1Config.cmake /root/catkin_ws/devel/share/quadruped_robot_1/cmake/quadruped_robot_1Config.cmake
