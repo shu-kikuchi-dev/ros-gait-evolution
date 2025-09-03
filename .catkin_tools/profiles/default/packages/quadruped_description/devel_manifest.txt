@@ -1,4 +1,0 @@
-quadruped_description
-/root/catkin_ws/devel/.private/quadruped_description/lib/pkgconfig/quadruped_description.pc /root/catkin_ws/devel/lib/pkgconfig/quadruped_description.pc
-/root/catkin_ws/devel/.private/quadruped_description/share/quadruped_description/cmake/quadruped_descriptionConfig-version.cmake /root/catkin_ws/devel/share/quadruped_description/cmake/quadruped_descriptionConfig-version.cmake
-/root/catkin_ws/devel/.private/quadruped_description/share/quadruped_description/cmake/quadruped_descriptionConfig.cmake /root/catkin_ws/devel/share/quadruped_description/cmake/quadruped_descriptionConfig.cmake
